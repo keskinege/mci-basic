@@ -1,0 +1,376 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: multi-cluster-demo
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: foo
+  namespace: multi-cluster-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: foo
+  template:
+    metadata:
+      labels:
+        app: foo
+        version: v1
+    spec:
+      containers:
+      - name: whereami
+        image: us-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.20
+        env:
+        - name: METADATA
+          value: "foo"
+        ports:
+          - name: http
+            containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+            scheme: HTTP
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bar
+  namespace: multi-cluster-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bar
+  template:
+    metadata:
+      labels:
+        app: bar
+        version: v1
+    spec:
+      containers:
+      - name: whereami
+        image: us-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.20
+        env:
+        - name: METADATA
+          value: "bar"
+        ports:
+          - name: http
+            containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+            scheme: HTTP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: default-backend
+  namespace: multi-cluster-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: default-backend
+  template:
+    metadata:
+      labels:
+        app: default-backend
+    spec:
+      containers:
+      - name: whereami
+        image: us-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.20
+        env:
+        - name: METADATA
+          value: "default-backend"
+        ports:
+          - name: http
+            containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+            scheme: HTTP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bar2
+  namespace: multi-cluster-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bar2
+  template:
+    metadata:
+      labels:
+        app: bar2
+        version: v1
+    spec:
+      containers:
+      - name: whereami
+        image: us-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.20
+        env:
+        - name: METADATA
+          value: "bar2"
+        ports:
+          - name: http
+            containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+            scheme: HTTP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bar3
+  namespace: multi-cluster-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bar3
+  template:
+    metadata:
+      labels:
+        app: bar3
+        version: v1
+    spec:
+      containers:
+      - name: whereami
+        image: us-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.20
+        env:
+        - name: METADATA
+          value: "bar3"
+        ports:
+          - name: http
+            containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+            scheme: HTTP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bar4
+  namespace: multi-cluster-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bar4
+  template:
+    metadata:
+      labels:
+        app: bar4
+        version: v1
+    spec:
+      containers:
+      - name: whereami
+        image: us-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.20
+        env:
+        - name: METADATA
+          value: "bar4"
+        ports:
+          - name: http
+            containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+            scheme: HTTP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bar5
+  namespace: multi-cluster-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bar5
+  template:
+    metadata:
+      labels:
+        app: bar5
+        version: v1
+    spec:
+      containers:
+      - name: whereami
+        image: us-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.20
+        env:
+        - name: METADATA
+          value: "bar5"
+        ports:
+          - name: http
+            containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+            scheme: HTTP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bar6
+  namespace: multi-cluster-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bar6
+  template:
+    metadata:
+      labels:
+        app: bar6
+        version: v1
+    spec:
+      containers:
+      - name: whereami
+        image: us-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.20
+        env:
+        - name: METADATA
+          value: "bar6"
+        ports:
+          - name: http
+            containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+            scheme: HTTP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bar7
+  namespace: multi-cluster-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bar7
+  template:
+    metadata:
+      labels:
+        app: bar7
+        version: v1
+    spec:
+      containers:
+      - name: whereami
+        image: us-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.20
+        env:
+        - name: METADATA
+          value: "bar7"
+        ports:
+          - name: http
+            containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+            scheme: HTTP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bar8
+  namespace: multi-cluster-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bar8
+  template:
+    metadata:
+      labels:
+        app: bar8
+        version: v1
+    spec:
+      containers:
+      - name: whereami
+        image: us-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.20
+        env:
+        - name: METADATA
+          value: "bar8"
+        ports:
+          - name: http
+            containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+            scheme: HTTP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bar9
+  namespace: multi-cluster-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bar9
+  template:
+    metadata:
+      labels:
+        app: bar9
+        version: v1
+    spec:
+      containers:
+      - name: whereami
+        image: us-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.20
+        env:
+        - name: METADATA
+          value: "bar9"
+        ports:
+          - name: http
+            containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+            scheme: HTTP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bar10
+  namespace: multi-cluster-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bar10
+  template:
+    metadata:
+      labels:
+        app: bar10
+        version: v1
+    spec:
+      containers:
+      - name: whereami
+        image: us-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.20
+        env:
+        - name: METADATA
+          value: "bar10"
+        ports:
+          - name: http
+            containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+            scheme: HTTP

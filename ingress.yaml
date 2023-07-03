@@ -1,0 +1,2862 @@
+apiVersion: networking.gke.io/v1
+kind: MultiClusterIngress
+metadata:
+  name: foobar-ingress
+  namespace: multi-cluster-demo
+spec:
+  template:
+    spec:
+      backend:
+        serviceName: default-backend
+        servicePort: 8080
+      rules:
+      - host: foo.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: foo
+                servicePort: 8080
+      - host: bar.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar1.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar2.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar2
+                servicePort: 8080
+
+      - host: bar3.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar4.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar5.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar6.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar7.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar8.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar9.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar10.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar11.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar12.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar13.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar14.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      - host: bar15.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar16.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar17.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar18.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar19.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar20.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar21.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar22.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar23.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar24.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar25.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar26.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar27.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar28.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar29.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+
+      - host: bar30.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar31.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar32.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar33.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar34.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar35.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar36.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar37.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar38.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar39.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar40.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar41.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar42.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar43.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar44.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      - host: bar45.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar46.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar47.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar48.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar49.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar50.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar51.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar52.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar53.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar54.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar55.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar56.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar57.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar58.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar59.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar60.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: ba61.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar62.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar63.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar64.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar65.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      - host: bar66.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar67.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar68.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar69.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+
+      - host: bar70.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar71.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar72.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar73.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar74.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar75.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar2
+                servicePort: 8080
+
+      - host: bar76.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar77.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar78.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar79.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar80.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar81.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar82.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar83.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar84.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar85.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar86.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar87.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      - host: bar88.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar89.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar90.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar91.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar92.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar93.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar94.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar95.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar96.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar97.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar98.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar99.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar100.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar101.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar102.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+
+      - host: bar103.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar104.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar105.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar106.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar107.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar108.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar109.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar110.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar111.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar112.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar113.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar114.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar115.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar116.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar117.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      - host: bar118.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar119.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar120.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar121.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar122.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar123.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar124.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar125.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar126.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar127.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar128.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar129.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar130.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar131.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar132.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar133.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar134.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar135.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar136.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar137.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar138.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar139.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar140.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar141.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar142.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+
+
+      - host: bar145.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar146.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar147.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar148.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar149.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar150.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar151.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: ba152.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar153.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar154.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar155.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar156.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar157.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar158.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar159.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar160.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: ba161.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar162.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar163.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar164.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar165.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      - host: bar66.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar167.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar168.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar169.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar170.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar171.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar172.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar173.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar174.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar175.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar2
+                servicePort: 8080
+
+      - host: bar176.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar177.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar178.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar179.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar180.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar181.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: ba1r82.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar183.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar184.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar185.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar186.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar187.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      - host: bar188.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar189.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar190.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar191.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar192.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar193.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar194.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar195.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar196.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar197.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar198.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar199.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar200.example.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      - host: bar.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar1.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar2.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar2
+                servicePort: 8080
+
+      - host: bar3.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar4.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar5.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar6.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar7.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar8.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar9.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar10.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar11.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar12.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar13.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar14.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      - host: bar15.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar16.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar17.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar18.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar19.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar20.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar21.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar22.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar23.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar24.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar25.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar26.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar27.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar28.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar29.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+
+      - host: bar30.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar31.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar32.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar33.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar34.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar35.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar36.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar37.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar38.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar39.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar40.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar41.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar42.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar43.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar44.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      - host: bar45.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar46.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar47.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar48.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar49.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar50.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar51.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar52.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar53.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar54.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar55.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar56.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar57.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar58.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar59.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar60.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: ba61.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar62.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar63.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar64.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar65.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      - host: bar66.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar67.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar68.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar69.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+
+      - host: bar70.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar71.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar72.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar73.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar74.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar75.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar2
+                servicePort: 8080
+
+      - host: bar76.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar77.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar78.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar79.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar80.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar81.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar82.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar83.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar84.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar85.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar86.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar87.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      - host: bar88.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar89.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar90.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar91.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar92.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar93.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar94.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar95.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar96.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar97.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar98.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar99.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar100.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar101.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar102.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+
+      - host: bar103.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar104.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar105.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar106.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar107.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar108.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar109.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar110.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar111.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar112.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar113.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar114.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar115.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar116.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar117.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      - host: bar118.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar119.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar120.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar121.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar122.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar123.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar124.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar125.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar126.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar127.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar128.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar129.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar130.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar131.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar132.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar133.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar134.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar135.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar136.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar137.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar138.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar139.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar140.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar141.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar142.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+
+
+      - host: bar145.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar146.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar147.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar148.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar149.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar150.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar151.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: ba152.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar153.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar154.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar155.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar156.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar157.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar158.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar159.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar160.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: ba161.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar162.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar163.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar164.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar165.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      - host: bar66.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar167.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar168.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar169.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar170.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar171.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar172.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar173.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar174.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar175.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar2
+                servicePort: 8080
+
+      - host: bar176.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar177.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar178.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar179.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar180.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar181.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: ba1r82.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar183.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar184.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar185.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar186.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar187.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      - host: bar188.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar189.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar190.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar191.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar192.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar193.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar194.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar195.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar196.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar197.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+      
+      - host: bar198.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar199.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+      - host: bar200.random.com
+        http:
+          paths:
+            - backend:
+                serviceName: bar
+                servicePort: 8080
+
+---
+apiVersion: networking.gke.io/v1
+kind: MultiClusterService
+metadata:
+  name: foo
+  namespace: multi-cluster-demo
+spec:
+  template:
+    spec:
+      selector:
+        app: foo
+      ports:
+      - name: http
+        protocol: TCP
+        port: 8080
+        targetPort: 8080
+---
+apiVersion: networking.gke.io/v1
+kind: MultiClusterService
+metadata:
+  name: bar
+  namespace: multi-cluster-demo
+  annotations:
+    beta.cloud.google.com/backend-config: '{"ports": {"8080":"backend-health-check"}}'
+spec:
+  template:
+    spec:
+      selector:
+        app: bar
+      ports:
+      - name: http
+        protocol: TCP
+        port: 8080
+        targetPort: 8080
+---
+apiVersion: networking.gke.io/v1
+kind: MultiClusterService
+metadata:
+  name: default-backend
+  namespace: multi-cluster-demo
+  annotations:
+    beta.cloud.google.com/backend-config: '{"default": "backend-health-check"}'
+spec:
+  template:
+    spec:
+      selector:
+        app: default-backend
+      ports:
+      - name: http
+        protocol: TCP
+        port: 8080
+        targetPort: 8080
+---
+apiVersion: cloud.google.com/v1
+kind: BackendConfig
+metadata:
+  name: backend-health-check
+  namespace: multi-cluster-demo
+spec:
+  healthCheck:
+    requestPath: /healthz
+    port: 8080
+    type: HTTP
